@@ -1,13 +1,12 @@
-import { NgModule, Injector } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 import { RouterModule } from '@angular/router';
-import { routes } from 'src/app/home/routes/routes';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { routes } from 'src/app/products/routes/routes';
 import { NavigationModule } from '../navigation/navigation.module';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [ProductPageComponent],
   imports: [
     CommonModule,
     NavigationModule,
@@ -15,4 +14,4 @@ import { NavigationModule } from '../navigation/navigation.module';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class HomeModule { }
+export class ProductsModule { }
